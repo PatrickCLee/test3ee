@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//搭配ptl03測試
+//搭ptl03測試
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,8 +22,9 @@ public class PTL03 extends HttpServlet {
 		System.out.println(account + ":" + passwd + ":" + gender + 
 				":" + area + ":" + memo);
 
-		//		String like = request.getParameter("like"); //只會顯示第一個
-		String[] likes = request.getParameterValues("likes");//取得該參數所有的values
+//		String like = request.getParameter("like"); //此種敘述方式只會顯示第一個
+//		System.out.println(like);
+		String[] likes = request.getParameterValues("like");//取得該參數所有的values
 		if(likes!=null) {
 			for(String like : likes) {
 				System.out.println(like);

@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//InputS讀圖檔款	同時有檔案上傳及輸入欄的表單
+// 搭ptl04, InputStream讀圖檔款	同時有檔案上傳及輸入欄的表單
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

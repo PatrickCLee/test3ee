@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//response, 搭配ptl04, 計算
+//response, 搭ptl04, 計算
 import java.io.IOException;
 import java.io.PrintWriter;
 

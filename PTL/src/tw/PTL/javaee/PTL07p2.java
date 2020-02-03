@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// 搭配ptl03p1 網頁端上傳多個檔案 下載下來後自定檔名
+// 搭ptl03p1 網頁端上傳多個檔案 下載下來後自定檔名
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

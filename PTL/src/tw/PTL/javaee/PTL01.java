@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-
+//搭ptl01, HttpServlet是介面, 我們在做的是多型, 寫出提供服務的servlet
 import java.io.IOException;
 import java.util.Enumeration;
 
@@ -10,14 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/PTL01")
-public class PTL01 extends HttpServlet {
+public class PTL01 extends HttpServlet {	
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		Enumeration<String> headers = request.getHeaderNames();
+		Enumeration<String> headers = request.getHeaderNames();	//因不知道會傳哪些key, 故用回傳Enum的method
 		while (headers.hasMoreElements()) {
-			String key = headers.nextElement();
-			String value = request.getHeader(key);
+			String key = headers.nextElement();		//回傳key
+			String value = request.getHeader(key);	//用傳回的key取得value
 			System.out.println(key + " = " + value);
 		}
 	}

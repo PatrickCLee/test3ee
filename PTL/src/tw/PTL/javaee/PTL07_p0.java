@@ -16,7 +16,7 @@ import javax.servlet.http.Part;
 
 @WebServlet("/PTL07p0")
 @MultipartConfig
-public class PTL07p0 extends HttpServlet {
+public class PTL07_p0 extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");

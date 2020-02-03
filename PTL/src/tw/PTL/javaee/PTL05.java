@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-
+// WebServlet的annotation可以達到不讓user知道真實的連結位址?的目的
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

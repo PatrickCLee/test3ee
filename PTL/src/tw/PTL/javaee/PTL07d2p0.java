@@ -17,7 +17,7 @@ import javax.servlet.http.Part;
 
 @WebServlet("/PTL07_d2p0")
 @MultipartConfig(location = "D:\\Dropboxz\\test1EE\\PTL\\WebContent\\views")
-public class PTL07_d2p0 extends HttpServlet {
+public class PTL07d2p0 extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {

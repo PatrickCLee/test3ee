@@ -35,7 +35,7 @@ public class HelloWorld extends HttpServlet {
 	protected void service(HttpServletRequest req, HttpServletResponse resp) 
 			throws ServletException, IOException {
 		System.out.println("Service");
-		super.service(req, resp);
+		super.service(req, resp);	//super裡面跑的有去呼叫doGet，可與sysout互換得證
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
