@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//URL後帶參數測試
+// 搭get或post
 import java.io.IOException;
 import java.util.Map;
 import java.util.Set;
@@ -18,7 +18,7 @@ public class PTL02 extends HttpServlet {
 		System.out.println("new->>>>>>>>>>>>>");
 		for (String key : keys) {
 			String[] values = map.get(key);
-			System.out.println(key + ":");
+			System.out.print(key + ":");
 			for(String value : values) {
 				System.out.println(value);
 			}

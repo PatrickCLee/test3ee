@@ -14,9 +14,9 @@ public class PTL01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		Enumeration<String> headers = request.getHeaderNames();	//因不知道會傳哪些key, 故用回傳Enum的method
+		Enumeration<String> headers = request.getHeaderNames();	//看header, 因不知道會傳哪些key, 故用回傳Enum的method
 		while (headers.hasMoreElements()) {
-			String key = headers.nextElement();		//回傳key
+			String key = headers.nextElement();		//回傳key (對header來說正確名稱是name)
 			String value = request.getHeader(key);	//用傳回的key取得value
 			System.out.println(key + " = " + value);
 		}
