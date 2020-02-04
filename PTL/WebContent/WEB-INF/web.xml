@@ -16,7 +16,7 @@ version="3.1">
   
   <context-param>
   	<param-name>viewPath</param-name>
-  	<param-value>D:\Dropboxz\test1EE\PTL\WebContent\views</param-value>
+  	<param-value>D:\Dropboxz\test3ee\PTL\WebContent\views</param-value>
   </context-param>
   
 </web-app>

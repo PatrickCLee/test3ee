@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// 準備讓"使用者從網頁上傳的檔案"存放的位置
+// 準備給"使用者從網頁上傳的檔案"存放的位置
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -20,8 +20,8 @@ public class PTL07_p0 extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		//	D:/Dropboxz/test1EE/PTL/WebContent/upload	存放使用者丟上來東西的路徑
-		File uploadDir = new File("D:\\Dropboxz\\test1EE\\PTL\\WebContent\\views");
+		//	D:/Dropboxz/test3EE/PTL/WebContent/upload	存放使用者丟上來東西的路徑
+		File uploadDir = new File("D:\\Dropboxz\\test3EE\\PTL\\WebContent\\upload"); //讓下方io方便帶路徑參數
 		
 		// 底下處理 enctype="multipart/form-data"	
 		// **必須加上@MultipartConfig的annotation, 如上方的WebServlet的下一行
@@ -32,7 +32,7 @@ public class PTL07_p0 extends HttpServlet {
 			String name1 = part.getSubmittedFileName();	//含路徑的檔名
 			System.out.println(name + ":" + name1);
 			
-			InputStream in = part.getInputStream();	//銜接實際的檔案內容
+			InputStream in = part.getInputStream();	//銜接實際的檔案內容, 底下為讀進寫出
 			byte[]buf = new byte[(int)part.getSize()];
 			in.read(buf);
 			in.close();

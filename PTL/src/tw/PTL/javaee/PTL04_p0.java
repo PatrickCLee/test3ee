@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//BufReader讀文字款
+//配合input type=file, BufReader讀文字款
 import java.io.BufferedReader;
 import java.io.IOException;
 import javax.servlet.ServletException;
