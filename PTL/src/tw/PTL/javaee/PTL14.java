@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//扮演Model
+// 搭PTL13, 扮演Model
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

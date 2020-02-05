@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-
+// 搭PTL11
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -17,7 +17,7 @@ public class PTL12 extends HttpServlet {
 		String name = request.getParameter("name");	//接收11問號帶的參數
 		
 		PrintWriter out = response.getWriter();
-		out.println("Hello" + name + "I'm 12!<hr / style='width:80%';>");
+		out.println("Hello " + name + "I'm 12!<hr />");
 	}
 
 }

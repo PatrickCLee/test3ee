@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//開始研究response, charSequence 
+// 不搭, 開始研究response, charSequence 
 import java.io.IOException;
 import java.io.PrintWriter;
 

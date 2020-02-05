@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//response, 09進階版, 把ptl04的結果顯示在原頁面上
+// 元配, 09進階版, 把運算結果顯示在原畫面上
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -17,7 +17,7 @@ public class PTL10 extends HttpServlet {
 		String y = request.getParameter("y");
 		String op = request.getParameter("op");
 	
-		//若使用者未輸入就按下submit, x和y會是null, 故新增下列10行 
+		//若使用者未輸入就按下submit, x和y會是null, 故先給intx, inty初始值0, 後面再assign 
 		int intx, inty; 
 		double result;
 		result = intx = inty = 0;	//**若寫為intx = result = 0;會出錯
@@ -46,10 +46,10 @@ public class PTL10 extends HttpServlet {
 		.append("<form action='PTL10' method='get'>")
 		.append("<input type='text' name='x'value="+intx+ ">")
 		.append("<select name='op'>")
-		.append("<option value='1' "+((op.equals("1"))?"selected":"") + " >+</option>")//**此行重要 ((op.equals("1"))?"selected":"")
-		.append("<option value='2' "+((op.equals("2"))?"selected":"") + " >-</option>")
-		.append("<option value='3' "+((op.equals("3"))?"selected":"") + " >x</option>")
-		.append("<option value='4' "+((op.equals("4"))?"selected":"") + " >/</option>")
+		.append("<option value='1' "+(op.equals("1")?"selected":"") + " >+</option>")//**此行重要 (op.equals("1")?"selected":"")
+		.append("<option value='2' "+(op.equals("2")?"selected":"") + " >-</option>")
+		.append("<option value='3' "+(op.equals("3")?"selected":"") + " >x</option>")
+		.append("<option value='4' "+(op.equals("4")?"selected":"") + " >/</option>")
 		.append("</select>")
 		.append("<input type='text' name='y'value="+inty+ ">")
 		.append("<input type='submit' value='=' />")

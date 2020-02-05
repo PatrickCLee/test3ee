@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//搭ptl03測試, 直接給參數名取得參數值
+// 元配, 直接給參數名取得參數值
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

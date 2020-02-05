@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// 搭p03p1 網頁端上傳多個檔案 以現在日期時間為檔名存到電腦
+// 元配, 網頁端上傳多個檔案 以現在日期時間為檔名存到電腦
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
 @WebServlet("/PTL07")
-@MultipartConfig(location="D:\\Dropboxz\\test3ee\\PTL\\WebContent\\upload")
+@MultipartConfig(location="D:\\Dropboxz\\test3ee\\PTL\\WebContent\\upload")//直接指定路徑
 public class PTL07 extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

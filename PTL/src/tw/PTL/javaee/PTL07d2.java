@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// 搭p03, 在 以網頁中輸入欄來設定檔名 的前提下如何寫code
+// 元配, 在 以網頁中輸入欄來設定檔名 的前提下寫code
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

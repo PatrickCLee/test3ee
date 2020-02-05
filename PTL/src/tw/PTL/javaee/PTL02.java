@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// 搭get或post
+// 元配, get或post
 import java.io.IOException;
 import java.util.Map;
 import java.util.Set;

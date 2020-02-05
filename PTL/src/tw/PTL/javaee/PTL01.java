@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-//搭ptl01, HttpServlet是介面, 我們在做的是多型, 寫出提供服務的servlet
+// 元配, HttpServlet是介面, 我們在做的是多型, 寫出提供服務的servlet
 import java.io.IOException;
 import java.util.Enumeration;
 
