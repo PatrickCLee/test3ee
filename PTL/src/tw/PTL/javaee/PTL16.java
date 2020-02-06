@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// model, 普通class
+// model, 普通java class非servlet
 public class PTL16 {
 	int x, y, op;
 	public PTL16(String x, String y, String op) {

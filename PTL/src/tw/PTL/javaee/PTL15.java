@@ -31,7 +31,7 @@ public class PTL15 extends HttpServlet {
 		//2 : view
 		RequestDispatcher dispatcher = 
 			request.getRequestDispatcher(
-				String.format(
+				String.format(		//類似sysout.printf的%d, 值, 此處為String的static method回傳String
 					"PTL17?x=%s&op=%s&y=%s&result=%s&filename=%s", //此處的順序只需要管此處的format %s傳遞進去的順序就好
 						x,op,y,result,"view2.html")); //交給17處理畫面的事
 		dispatcher.forward(request, response);

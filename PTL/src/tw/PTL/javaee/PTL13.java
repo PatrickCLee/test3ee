@@ -19,7 +19,7 @@ public class PTL13 extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		out.println("<h1 style='color:green;'> What up</h1><hr />");
 		
-		dispatcher.forward(request, response);	//第二招轉發, 注意頁面顯現出來的是此處設定的html而不是14的純文字
+		dispatcher.forward(request, response);	//第二招轉發, 注意頁面顯現出來的是此處設定的html而不是14的純文字, 且上方print的字串不見了
 		
 	}
 

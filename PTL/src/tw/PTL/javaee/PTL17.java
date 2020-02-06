@@ -1,5 +1,5 @@
 package tw.PTL.javaee;
-// view
+// view		先看PTL18和PTL17p0 簡單版
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
