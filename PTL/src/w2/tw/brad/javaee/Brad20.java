@@ -51,7 +51,7 @@ public class Brad20 extends HttpServlet {
 		String account = request.getParameter("account");
 		String passwd = request.getParameter("passwd");
 		
-		if (account == null || !isMysqlOK) {	//帳號錯或是連線資料庫失敗
+		if (account == null || !isMysqlOK) {	//帳號錯或是連線資料庫失敗,其實此處應為account=="",老師上課時是先直接執行本servlet測試return的效果
 			response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Server Busy!");//第一個參數為連線狀態碼, 第二為欲顯示訊息 
 			return;
 		}
