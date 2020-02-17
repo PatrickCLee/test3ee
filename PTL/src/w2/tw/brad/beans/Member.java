@@ -1,5 +1,5 @@
 package w2.tw.brad.beans;
-//javaBean需要無傳參數建構式，getter和setter的method名稱也要按照規定，屬性慣例為private
+
 public class Member {
 	private String account, realname;
 	private int age;
@@ -16,7 +16,7 @@ public class Member {
 	
 	// getter & setter
 	public String getAccount() {
-		return "==>" + account;
+		return account;
 	}
 	public String getRealname() {
 		return realname;
@@ -26,7 +26,7 @@ public class Member {
 	}
 
 	public void setAccount(String account) {
-		this.account = "***" + account;
+		this.account = account;
 	}
 
 	public void setRealname(String realname) {
