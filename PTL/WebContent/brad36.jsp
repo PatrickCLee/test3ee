@@ -54,10 +54,10 @@ ${10 + 3 }<br>
 ${param.x } > ${param.y } => ${param.x > param.y }<br> <!-- 此處變成字串比較 -->
 <!-- URI後方帶參數 -->
 ${(param.x == "10")?"YES":"NO"} <br>
-${10 > 3 }	<br>
+10 > 3: ${10 > 3 }	<br>
 Account: ${member.account }<br> <!-- member.getAccount() -->
 Age: ${member.age }<br>
 Realname:${member.realname }<br>
 </body>
 </html>
-<!-- 後端整理資料,前端呈現資料 -->
+<!-- EL語法結合物件及參數,後端整理資料,前端呈現資料 -->
