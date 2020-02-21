@@ -26,18 +26,18 @@
 		<th>First</th>
 		<th>Last</th>
 	</tr>
-	<c:forEach items="${namesla }" var="name" varStatus="status"> <%--這句話前面念做 for(String name : namesla) ; status為每個物件的狀態物件 --%>
+	<c:forEach items="${namesla }" var="name" varStatus="tus"> <%--這句話前面念做 for(String name : namesla) ; tus為每個物件(name)的狀態物件 --%>
 		<tr bgcolor="
 			<c:choose>
-				<c:when test="${status.index % 2 == 0 }">yellow</c:when>
+				<c:when test="${tus.index % 2 == 0 }">yellow</c:when>
 				<c:otherwise>pink</c:otherwise>
 			</c:choose>
-		" }">  <%--上方bgcolor內可以直接用EL寫 <tr bgcolor="${status.index % 2 ==0?"yellow":"pink" }"> --%>
-			<td>${status.index }</td>
+		" }">  <%--上方bgcolor內可以直接用EL寫 <tr bgcolor="${tus.index % 2 ==0?"yellow":"pink" }"> --%>
+			<td>${tus.index }</td>
 			<td>${name }</td>
-			<td>${status.count }</td>
-			<td>${status.first }</td>
-			<td>${status.last }</td>
+			<td>${tus.count }</td>	<!-- 計數 -->
+			<td>${tus.first }</td>
+			<td>${tus.last }</td>
 		</tr>
 	</c:forEach>
 </table>	

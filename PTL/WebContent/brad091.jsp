@@ -32,3 +32,4 @@
     <div id="piechart" style="width: 900px; height: 500px;"></div>
   </body>
 </html>
+<!-- 後端運算處理,前端呈現	(要帶參數否則畫面跑不出來) -->

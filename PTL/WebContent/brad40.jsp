@@ -11,10 +11,10 @@
 <body>
 <h1>Cool Story Bro</h1>
 <hr>
-<c:if test='${param.n == "100" }' var="result">
-Hello, World<br>
-</c:if>
-${result }
+<c:if test='${param.n == "100" }' var="result">	<!-- test輸入邏輯,將判斷結果放在變數中,if標籤中間夾的true時才會執行-->
+Hello, World<br>	
+</c:if>					<!-- taglib沒有else -->
+n == 100 : ${result }
 <hr>
 <c:set var="score">${BradAPI.randomScore() }</c:set>
 Score: ${score }

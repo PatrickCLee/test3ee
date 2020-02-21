@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%
 	// 隱含物件 request (不用new,已經存在)
-	String method = request.getMethod();
+	String method = request.getMethod();	//傳遞方式
 	// 隱含物件 out 相當於 response.getWriter(),拿到PrintWriter
 	out.println(method + "<br>");
 	// 隱含物件 pageContext

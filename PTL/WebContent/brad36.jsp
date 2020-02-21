@@ -6,7 +6,7 @@
     pageEncoding="UTF-8"%>
 <% 
 	String[] var1 = {"value1","value2","value3","value4","value5"};
-	pageContext.setAttribute("username", var1);
+	pageContext.setAttribute("username", var1);	//設定key和value,下方直接呼叫
 	
 	String[] var2 = {"brad1","brad2","brad3","brad4","brad5",};
 	request.setAttribute("username", var2);
@@ -46,12 +46,14 @@ Map2: ${map.k2 }<br>
 Map3: ${map[param.key] }<br>
 <!-- URI後方帶參數 -->
 Lottery1: <%= BradAPI.createLottery() %> <br>
-Lottery2: ${BradAPI.createLottery() }<br>
-random: ${Math.random() }<br>
+Lottery2: ${BradAPI.createLottery() }<br>	<!-- EL可以直接寫static的method-->
+random: ${Math.random() }<br>		
 Hello: ${BradAPI.sayHello(param.name) }<br>
 <!-- URI後方帶參數 -->
 ${10 + 3 }<br>
 ${param.x } > ${param.y } => ${param.x > param.y }<br> <!-- 此處變成字串比較 -->
+<!-- URI後方帶參數 -->
+${param.x } > ${param.y } => ${Integer.parseInt(param.x) > Integer.parseInt(param.y) }<br> 
 <!-- URI後方帶參數 -->
 ${(param.x == "10")?"YES":"NO"} <br>
 10 > 3: ${10 > 3 }	<br>

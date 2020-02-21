@@ -21,3 +21,4 @@ Hello, World<br>
 ${error }
 </body>
 </html>
+<!-- 用taglib寫catch,注意有開始及結束, 最後用EL輸出-->
