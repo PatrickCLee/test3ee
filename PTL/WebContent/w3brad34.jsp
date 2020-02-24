@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="brad35.jsp" method="get">
+<form action="w3brad35.jsp" method="get">
 	<input type="text" name="account" /><br>
 	<input type="password" name="passwd" /><br>
 	<input type="checkbox" name="like" value="1" />Like1
