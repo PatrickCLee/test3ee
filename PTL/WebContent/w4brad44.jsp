@@ -14,18 +14,17 @@ SELECT * FROM opendata
 </sql:query>
 <c:set var="rpp" value="8" />	<%--result per page --%>
 <%
-	Result result =  (Result)pageContext.getAttribute("rs1");
-	int rowCount = result.getRowCount();
+	Result result =  (Result)pageContext.getAttribute("rs1");	//將page變數轉為java變數,抓到上面的rs1,回傳型別為物件,在外面設的變數沒有特別註明scope的話都是在page
+	int rowCount = result.getRowCount();	//已經拿到result物件,故可以取得他的屬性
 	int rpp = Integer.parseInt((String)pageContext.getAttribute("rpp"));
-	int pages = rowCount % rpp == 0 ? rowCount / rpp : rowCount / rpp + 1;
-	pageContext.setAttribute("pages", pages);
+	int pages = rowCount % rpp == 0 ? rowCount / rpp : rowCount / rpp + 1;	//此為總頁數
+	pageContext.setAttribute("pages", pages);	//將java變數轉為page變數
 %>
 <c:set var="page" value="${param.page==null ? 1 : param.page }" />
 <c:set var="start" value="${(page - 1) * rpp }" />
 <c:set var="prev" value="${page == 1 ? 1 : page - 1 }" />
 
-<c:set var="next" value="${page == pages ? page : page + 1 }" />
-
+<c:set var="next" value="${page == pages ? page : page + 1 }" /><%-- 如果page(現在頁面)為總頁數的話 --%>
 <sql:query var="result">
 SELECT * FROM opendata limit ${start }, ${rpp }
 </sql:query>
