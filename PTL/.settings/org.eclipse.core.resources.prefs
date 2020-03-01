@@ -1,4 +1,9 @@
 eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/tags/calc.tag=UTF-8
+encoding//WebContent/WEB-INF/tags/dojsp.tag=UTF-8
+encoding//WebContent/WEB-INF/tags/myjsp.tag=UTF-8
+encoding//WebContent/WEB-INF/tags/sayHello.tag=UTF-8
+encoding//WebContent/WEB-INF/tags/test1.tag=UTF-8
 encoding//WebContent/w1p01.html=UTF-8
 encoding//WebContent/w2brad21.jsp=UTF-8
 encoding//WebContent/w2brad24.jsp=UTF-8
