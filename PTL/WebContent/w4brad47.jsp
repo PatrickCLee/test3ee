@@ -11,6 +11,7 @@
 	user="root"
 	password="root"
 	/>
+<%-- 當user按下update後要進行的步驟 --%>
 <c:if test="${!empty param.account }">
 	<sql:update>
 		UPDATE cust set account=?,passwd=?,realname=? WHERE id = ?
@@ -22,11 +23,12 @@
 	<c:redirect url="w4brad45.jsp" />
 </c:if>
 
+<%--底下負責抓到要顯示在欄位中讓user修改的資料 --%>
 <sql:query var="result">
-	SELECT * FROM cust2 WHERE id = ?
+	SELECT * FROM cust WHERE id = ?
 	<sql:param>${param.editid }</sql:param>
 </sql:query>
-<%--用此寫法得到的都會是多筆資料(即使出來結果只有一筆),觀念上仍為rows(map陣列),故下方要寫result.rows[0] --%>
+<%--用select得到的都會是多筆資料(即使出來結果只有一筆),觀念上仍為rows(map陣列),故下方要寫result.rows[0] --%>
 <!DOCTYPE html>
 <html>
 <head>
