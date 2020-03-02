@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="BIG5">
+<title>Insert title here</title>
+</head>
+<body>
+<script>
+	let x = {
+			a : 123,
+			b : 321,
+			c : function(){}
+			}
+	
+	console.log(x);
+	
+	let z = 456;
+	
+	x.c = function(y){
+		return y + z;
+	}
+	
+	console.log(x.c(-6));
+	
+	
+</script>
+</body>
+</html>

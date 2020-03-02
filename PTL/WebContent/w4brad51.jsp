@@ -15,17 +15,17 @@
 10 * 3 = ${multiply }<br>
 10 / 3 = ${divide }<br>
 </br:calc>
-<br:dojsp />				<%-- 3,% jsp語法 --%>
+<br:dojsp />				<%-- 3, % jsp語法 --%>
 <hr />
 <table border="1" width="100%">
 	<tr>
 		<th>Product Name</th>
 		<th>Price</th>
 	</tr>
-	<br:myjsp name="Camera" price ="1,000" />	<%-- 4, --%>
+	<br:myjsp name="Camera" price ="1,000" />	<%-- 4, dynamicAttributes,jspContext--%>
 	<br:myjsp name="Mouse" price ="200" />
 	<br:myjsp name="iPhone" price ="31,000" />
 </table>
 </body>
 </html>
-<%--深入玩法:結合forEach和資料庫 --%>
+<%--4的深入玩法:見Advance --%>

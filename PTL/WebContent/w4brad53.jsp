@@ -5,7 +5,7 @@
 		if (session.getAttribute("account") != null){
 			response.sendRedirect("w4brad55.jsp");			
 		}else{
-			response.sendRedirect("logout.jsp");
+			response.sendRedirect("w4logout.jsp");
 		}
 	}
 	//來到此頁應該是新的session,若已登入(session不是新的),回到已登入的畫面;不知怎麼弄把他session弄不見一律logout
@@ -17,7 +17,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <form action="w4brad54.jsp">
 	Account:<input name="account" /><br>
 	Password:<input type="password" name="passwd" /><br>
@@ -25,4 +24,4 @@
 </form>
 </body>
 </html>
-<%--為何此處的網址不會帶參數? --%>
+<%--為何此處的網址不會帶參數?答:因跑去54時沒有再把參數帶出來 --%>
